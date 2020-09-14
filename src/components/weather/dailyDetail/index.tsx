@@ -17,6 +17,7 @@ import {RootState} from "../../../reducers";
 import {itemWeather, weatherApi} from "../../../types/weatherApi";
 import {DAYS, DAYS_SUNDAY} from "../../../types/Days";
 import {useEffect, useState} from "react";
+import {GraphicDay} from "../graphicDay";
 interface Props {
     isToday: boolean
 }
@@ -107,6 +108,7 @@ export const DailyDetail = () => {
             </DataContainer>
         </DayDetail>
         <GraphicDetail>
+            <GraphicDay/>
         </GraphicDetail>
     </DetailContainer>
 }
